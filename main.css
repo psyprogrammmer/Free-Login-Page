@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(15, 34, 34);
+}
+.background{
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.ball{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+
+}
+.ball:first-child{
+    background: linear-gradient(
+        rgb(94, 94, 216),
+        rgb(25, 25, 160)
+    );
+    left: 80px;
+    top: 80px;
+}
+.ball:last-child{
+    background: linear-gradient(
+        rgb(245, 165, 17),
+        rgb(235, 181, 81)
+    );
+    right: 70px;
+    bottom: 40px;
+}
+form {
+    height: 550px;
+    width: 400px;
+    background-color: rgb(171, 102, 0.1);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgb(171, 102, 102);
+    box-shadow: 0 0 40px black;
+    padding: 50px 35px;
+
+}
+form *{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+   
+}
+form h3{
+font-size: 30px;
+font-weight: 500px;
+line-height: 40px;
+text-align: center;
+
+}
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+input {
+    display: block;
+    height: 50px;
+    width: 100px;
+    background-color: azure;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+         color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color:white;
+    color: black;
+    padding: 15px 0 ;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+    margin-top: 30px;
+    display: flex;
+}
+.social div{
+   background-color: red;
+   width: 150px;
+   border-radius: 3px;
+   padding: 5px 10px 10px 5px;
+   background-color: rgba(255, 255, 255, 0.4);
+   color: white;
+   text-align: center;
+}
+.social div:hover{
+    background-color: rgb(255, 255, 255,0.5);
+}
+.social.facebook{
+    margin: left 25px;
+}
+.social i {
+    margin-right: 4px;
+}
